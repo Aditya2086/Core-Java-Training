@@ -1,12 +1,5 @@
-package queue;
-
 import java.util.ArrayDeque;
 
-/**
- * ArrayDeque class which is implemented in the collection framework provides
- *  us with a way to apply resizable-array. This is a special kind of array
- *   that grows and allows users to add or remove an element from both sides of the queue.
- *    Array deques have no capacity restrictions and they grow as necessary to support usage.**/
 public class DequeDemo {
 
 	public static void main(String[] args) {
