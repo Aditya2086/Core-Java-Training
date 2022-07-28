@@ -1,10 +1,5 @@
-package sortedset;
-
 import java.util.TreeSet;
-/**
- * TreeSet implements the SortedSet interface. So, duplicate values are not allowed.
-Objects in a TreeSet are stored in a sorted and ascending order.
-TreeSet does not preserve the insertion order of elements but elements are sorted by keys.**/
+
 public class TreeSetDemo {
 
 	public static void main(String[] args) {
