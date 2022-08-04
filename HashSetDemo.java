@@ -1,23 +1,36 @@
-import java.util.HashSet;
-import java.util.Iterator;
-
+import java.util.*;
 public class HashSetDemo {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
+		HashSet hs1=new HashSet();
 		
-		HashSet<Integer> hs = new HashSet<>();
-		hs.add(20);
-		hs.add(10);
-		hs.add(30);
-		hs.add(10);
-		hs.add(30);
+		hs1.add(10);
+		hs1.add(15);
+		hs1.add(12);
+		hs1.add(11);
+		hs1.add(11);
+		System.out.println(hs1);
 		
-		System.out.println(hs);
+   HashSet hs2=new HashSet();
 		
-		Iterator<Integer> iter = hs.iterator();
-		while(iter.hasNext()) {
-			System.out.println(iter.next());
-		}
+		hs2.add(10);
+		hs2.add(13);
+		hs2.add(12);
+		hs2.add(5);
+		//hs1.addAll(hs2);
+		//System.out.println("Union Operation");
+		//System.out.println(hs1);
+		//hs1.retainAll(hs2);
+		//System.out.println("Intersection Operation");
+		//System.out.println(hs1);
+		
+		hs1.removeAll(hs2);
+		System.out.println("Difference of Set Operation");
+		System.out.println(hs1);
+		
+		
+		
 
 	}
 
